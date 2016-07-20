@@ -1,0 +1,16 @@
+<header><!-- header -->
+		<h1>Speeding Through Life</h1>
+		<h2>Where do you think you are going?</h2>
+		<%=image_tag "headerimg.jpg", size: "940x200"%>
+ 	</header><!-- end of header -->
+	
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><%= nav_link_to "Home", "home", root_path, "current_page"%></li>
+				<li><%= nav_link_to "New Page","new", new_page_path, "current_page" %></li>
+
+				<li><%= nav_link_to "Index", "index", pages_path, "current_page" %></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->

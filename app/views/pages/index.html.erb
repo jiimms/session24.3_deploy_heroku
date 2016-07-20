@@ -1,0 +1,11 @@
+<section id="content"><!-- #content -->
+	<article>
+		<h2>List of Pages</h2>
+		<ul>
+			<% @pages.each do |p|%>
+			<li><%=p.title%><br>
+					<%=p.description%> </li><br>
+					<%end%>
+		</ul>
+	</article>
+</section><!-- end of #content -->

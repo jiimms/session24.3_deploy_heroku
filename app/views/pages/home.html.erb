@@ -1,0 +1,32 @@
+<section id="content"><!-- #content -->
+	<article>
+		<p>Problem Statement : Have Rails Appliction with HTML layout & Try all the URL helpers.</p>
+		<h2>URL Helpers</h2>
+		<p>Provides a set of methods for making links and getting URLs that depend on the routing subsystem. This allows to use the same format for links in views and controllers.</p>
+		<p>
+			<h3>mail_to</h3>
+			<%= mail_to "jiimms@gmail.com", "Email Support",subject: "This is an example email"%>
+		</p>
+
+		<p><h3>current_page</h3>
+
+			 unless current_page?(root_path) <br>
+  			 link_to "home", root_path <br>
+			end <BR>
+			(This code is in application.html.erb)
+		</p>
+
+		<p><h3>link_to</h3>
+			<%=link_to "List of Pages", pages_path%>
+		</p>
+
+		<p><h3>button_to</h3><br>
+		Generates a form containing a single button that submits to the URL created by the set of options. </p>
+
+		<p><%= button_to "Create New Page", new_page_path, :method => :get  %></p>
+
+		<p>button_to uses post method by default while link_to uses get method.</p>
+
+
+	</article>							
+</section><!-- end of #content -->
